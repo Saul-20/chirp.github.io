@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;300;500;700;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Archivo', sans-serif;
+}
+
+header{
+    background-color: #fbf8f3;
+    padding: 0 16px 16px 16px;
+}
+
+.nav-header {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.logo {
+    padding: 10px;
+    font-size: 3rem;
+    text-decoration: none;
+    color: #3180f5;
+}
+.logo:hover {
+    color: #432ff3;
+}
+.burguer {
+    display: block;
+    cursor: pointer;
+}
+.burguer2 {
+    display: block;
+    cursor: pointer;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.botao{
+    display: none;
+}
+
+#lugar {
+    width: 280px;
+    background-color: #3176ab;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+}
+menu > ul {
+    padding: 15px;
+    list-style-type: none;
+    background-color: #3176ab;
+    padding-top: 30px;
+}
+menu > ul > li {
+    height: 45px;
+    font-size: 1.3em;
+    text-align: left;
+}
+menu > ul > li > a {
+    margin: auto;
+    color: white; 
+}
+nav a {
+    display: none;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: #432ff3;
+}
+
+/* aqui empieza la estilizacion del header --------------------------*/
+
+.container-hero{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-hero-img{
+    background: url("Assets/Hero\ Image\ \(Desktop\ View\).png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 25px;
+}
+
+.container-hero img{
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.container-hero h2{
+    font-size: 2.8rem;
+    margin-bottom: 16px;
+}
+
+.container-hero p{
+    color: #737373;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.btn-twitter{
+    background-color: #1da1f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 14px 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.container-hero .btn-twitter img{
+    width: 25px;
+    margin: 0;
+}
+
+.container-hero .lm{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1f7898;
+    margin-bottom: 16px;
+}
+
+.container-hero .figure-img{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.figure-img img{
+    width: 50px;
+}
+
+.figure-img img:nth-child(2){
+    position: absolute;
+    left: 25px;
+}
+
+.figure-img img:nth-child(3){
+    position: absolute;
+    left: 50px;
+}
+
+.figure-img img:nth-child(4){
+    position: absolute;
+    left: 75px;
+}
+
+.figure-img img:nth-child(5){
+    position: absolute;
+    left: 100px;
+}
+
+.figure-img img:nth-child(6){
+    position: absolute;
+    left: 125px;
+}
+
+.figure-img img:nth-child(7){
+    position: absolute;
+    left: 150px;
+}
+
+.figure-img img:nth-child(8){
+    position: absolute;
+    left: 175px;
+}
+
+.figure-img img:nth-child(9){
+    position: absolute;
+    left: 200px;
+}
+
+.container-hero p b{
+    color: #1f7898;
+}
+
+/* aqui empieza la section de las cartas ------------------------- */
+
+.features-smarter{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.features-smarter h2{
+    font-size: 2.8rem;
+    margin: 30px 0;
+}
+
+.features-smarter .container-card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.features-smarter .card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+}
+
+.features-smarter .card img{
+    width: 35px;
+}
+
+.features-smarter .card h3{
+    font-size: 1.6rem;
+}
+
+.features-smarter .card p{
+    font-size: 1.4rem;
+    color: #737373;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+
+/* aqui empieza la seccon de los comentarios --------------------- */
+
+.customers{
+    padding: 20px 16px;
+    background-color: #d7f5f5;  
+    padding-bottom: 40px;  
+}
+
+.customers h2{
+    font-size: 3rem;
+    padding: 40px 0;
+}
+
+.customers .container-comment{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.customers .card-comment{
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.card-comment .profile-twitter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.profile-twitter .profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile p{
+    color: #737373;
+}
+
+.profile p b{
+    font-size: 1.4rem;
+    color: black;
+}
+
+.card-comment > p{
+    color: #737373;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.card-comment .heart-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heart-date .heart{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.heart-date .heart p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #737373;
+}
+
+.heart-date .heart img{
+    width: 18px;
+}
+
+.heart-date .date p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #737373;
+}
+
+/* aqui empieza la seccion del precio ---------------------------- */
+
+.price{
+    width: 90%;
+    margin: 50px auto;
+}
+
+.price-title{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.price-description{
+    color: #737373;
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.price .card-price{
+    padding: 20px;
+    border: 1px solid #ffad23;
+    border-radius: 12px;
+    background-color: #fbf8f3;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.card-price p{
+    color: #737373;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.card-price p span{
+    font-size: 4rem;
+    font-weight: bold;
+    color: black;
+}
+
+.card-price .price-month{
+    border-bottom: 1px solid #cecece;
+    padding-bottom: 12px;
+}
+
+.card-price .beneficios{
+    border-bottom: 1px solid #cecece;
+    padding: 12px 0;
+}
+
+.beneficios ul{
+    list-style: none;
+}
+
+.beneficios ul li img{
+    padding-right: 12px;
+
+}
+
+.beneficios ul li{
+    color: #737373;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 24px;
+    padding-bottom: 14px;
+}
+
+.card-price .btn-twt{
+    padding-top: 16px;
+}
+
+footer{
+    background-color: #d7f5f5;
+    padding: 25px 0;
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 16px;
+}
+
+.footer-nav a{
+    color: black;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+@media (min-width: 768px){
+
+    .nav{
+        display: flex;
+    }
+
+    .nav a{
+        display: block;
+        color: #595959;
+        font-size: 1.4rem;
+    }
+
+    .burguer{
+        display: none;
+    }
+    
+    .botao{
+        display: block;
+    }
+
+    .btn-header{
+        background-color: #1da1f2;
+        padding: 14px 20px;
+        color: white;
+        text-decoration: none;
+        font-size: 1.4rem;
+        border-radius: 8px;
+        margin-bottom: 16px;
+    }
+
+    .container-hero-img{
+        background: url("Assets/Hero\ Image\ \(Tablet\ View\).png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 500px;
+        margin-bottom: 25px;
+    }
+
+    .container-hero .title-hero{
+        font-size: 5rem;
+    }
+    
+    .buttons-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 300px;
+    }
+
+    .description-header{
+        width: 400px;
+    }
+}
+
+@media (min-width: 1024px){
+
+    .container-hero{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .container-hero-img{
+        background: url("Assets/Hero\ Image\ \(Desktop\ View\).png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 600px;
+        margin-bottom: 25px;
+    }
+
+    .features-smarter h2{
+        width: 300px;
+    }
+
+    .features-smarter .container-card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .customers .container-comment{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 100px;
+    }
+
+    .footer-nav a{
+        padding-left: 16px;
+    }
+
+}
